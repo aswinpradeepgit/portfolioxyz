@@ -2,28 +2,84 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Base background – light, fun, Apple-like */
 body {
   background:
     radial-gradient(
-      at top left,
-      rgba(59, 130, 246, 0.12),
-      transparent 50%
+      at 20% 20%,
+      rgba(56, 189, 248, 0.45),
+      transparent 60%
     ),
     radial-gradient(
-      at top right,
-      rgba(168, 85, 247, 0.12),
-      transparent 50%
+      at 80% 30%,
+      rgba(168, 85, 247, 0.45),
+      transparent 60%
     ),
     radial-gradient(
-      at bottom left,
-      rgba(34, 197, 94, 0.12),
-      transparent 50%
+      at 50% 80%,
+      rgba(34, 197, 94, 0.35),
+      transparent 60%
     ),
-    #fafafa;
+    linear-gradient(to bottom, #f8fafc, #eef2ff);
 
-  color: #0f172a; /* slate-900 */
+  color: #0f172a;
   overflow-x: hidden;
 }
+
+
+/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
+
+/* Liquid Glass core */
+/* TRUE Liquid Glass */
+.glass {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.65),
+    rgba(255, 255, 255, 0.35)
+  );
+
+  backdrop-filter: blur(28px) saturate(200%);
+  -webkit-backdrop-filter: blur(28px) saturate(200%);
+
+  border-radius: 28px;
+
+  border: 1px solid rgba(255, 255, 255, 0.45);
+
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+/* Glass light reflection */
+.glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.55),
+    rgba(255, 255, 255, 0.05)
+  );
+
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.glass-float {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.glass-float:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 16px 48px rgba(0, 0, 0, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+
