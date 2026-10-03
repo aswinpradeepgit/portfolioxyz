@@ -15,7 +15,7 @@ const shell = readFileSync(join(dist, "index.html"), "utf8");
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;");
 
 function page({ path, title, description, image }) {
-  const url = `${SITE}${path}`;
+  const url = `${SITE}${path}/`; // GitHub Pages serves these as directories, with a trailing slash
   let html = shell
     .replace(/<title>[^<]*<\/title>/, `<title>${esc(title)}</title>`)
     .replace(/(<meta name="description" content=")[^"]*/, `$1${esc(description)}`)

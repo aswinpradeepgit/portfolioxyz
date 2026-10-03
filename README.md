@@ -8,7 +8,7 @@ Personal portfolio and logbook (blog) for Aswin Pradeep. React + Vite + Tailwind
 npm install
 npm run dev       # local dev server
 npm run build     # production build into dist/ (also prerenders blog pages)
-npm run deploy    # build + publish dist/ to the gh-pages branch
+npm run deploy    # build + publish dist/ to aswinpradeep.xyz (see Deploying)
 ```
 
 ## Where things live
@@ -45,3 +45,9 @@ npm run deploy    # build + publish dist/ to the gh-pages branch
 **Markdown that works in `content`:** `## headings`, paragraphs, `- lists`, `1. lists`, `> quotes`, `**bold**`, `*italic*`, `` `code` ``, code blocks, `[links](https://…)`, `---`, and images with captions: `![alt text](/blog/my-new-post/pic.png "Caption")`. If a post needs a backtick, escape it as `` \` `` inside the template string.
 
 Each post automatically gets its own page with the right title and share preview (see `scripts/prerender.mjs`).
+
+## Deploying
+
+aswinpradeep.xyz is served by GitHub Pages from the **`gh-pages` branch of `aswinpradeepgit/antigravity-portfolio`** (that repo holds the `CNAME`). The source code lives here, in `portfolioxyz`.
+
+`npm run deploy` builds this repo and pushes `dist/` to that branch with `--add`, which keeps the existing `CNAME` in place. Pushing to `main` alone does not change the live site.
