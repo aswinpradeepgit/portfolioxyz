@@ -176,6 +176,65 @@ html.lenis, html.lenis body { height: auto; }
   color: rgb(var(--fg) / 0.06);
 }
 
+/* ---------- Logbook (blog) ---------- */
+/* Faint ruled-paper lines with an amber margin rule, only on blog pages. */
+.logbook::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(90deg, transparent calc(50% - 560px), rgb(var(--accent) / 0.18) calc(50% - 560px), rgb(var(--accent) / 0.18) calc(50% - 559px), transparent calc(50% - 559px)),
+    repeating-linear-gradient(to bottom, transparent 0 35px, rgb(var(--line) / 0.55) 35px 36px);
+  mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+}
+
+.prose-log {
+  @apply font-serif text-[1.2rem] leading-[1.8] text-fg/90;
+}
+.prose-log > * + * { margin-top: 1.4em; }
+.prose-log > p:first-child::first-letter {
+  @apply float-left mr-3 mt-1 font-display text-[4.2rem] font-extrabold leading-[0.8] text-accent;
+}
+.prose-log h2 {
+  @apply mt-14 flex items-baseline gap-3 font-display text-[1.75rem] font-bold leading-tight tracking-tight text-fg;
+}
+.prose-log h2::before {
+  content: "✈";
+  @apply text-base text-accent;
+}
+.prose-log h3 { @apply mt-10 font-display text-xl font-bold text-fg; }
+.prose-log strong { @apply font-semibold text-fg; }
+.prose-log a { @apply text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent; }
+.prose-log code {
+  @apply rounded bg-accent-soft px-1.5 py-0.5 font-mono text-[0.8em] text-fg;
+}
+.prose-log pre {
+  @apply overflow-x-auto rounded-xl bg-board p-5 font-mono text-sm leading-relaxed text-board-ink;
+}
+.prose-log pre code { @apply bg-transparent p-0 text-inherit; }
+.prose-log ul, .prose-log ol { @apply space-y-2 pl-6; }
+.prose-log ul { list-style: none; }
+.prose-log ul > li { position: relative; }
+.prose-log ul > li::before {
+  content: "";
+  @apply absolute -left-5 top-[0.75em] h-1.5 w-1.5 rounded-full bg-accent;
+}
+.prose-log ol { @apply list-decimal marker:font-mono marker:text-sm marker:text-accent; }
+.prose-log blockquote {
+  @apply rounded-r-xl border-l-4 border-accent bg-accent-soft/60 px-6 py-4 font-mono text-base not-italic text-fg;
+}
+.prose-log figure {
+  @apply my-10 -rotate-[0.6deg] rounded-sm bg-white p-3 pb-4 shadow-lg dark:bg-[#f3eee3];
+}
+.prose-log figure:nth-of-type(even) { @apply rotate-[0.6deg]; }
+.prose-log figure img { @apply w-full rounded-[2px]; }
+.prose-log figcaption {
+  @apply mt-3 text-center font-serif text-base italic text-[#57504a];
+}
+.prose-log hr { @apply my-12 border-dashed border-line; }
+
 /* ---------- Custom cursor (fine pointers only, toggled from JS) ---------- */
 html.has-cursor, html.has-cursor a, html.has-cursor button { cursor: none; }
 

@@ -1,5 +1,13 @@
 import { useState } from "react";
 import { nav, profile } from "../data/content";
+import { usePath } from "../lib/router";
+import Link from "./Link";
+
+// Section anchors scroll in place on the home page; elsewhere they route home first.
+function NavLink({ href, isHome, ...rest }) {
+  if (href.startsWith("#") && isHome) return <a href={href} {...rest} />;
+  return <Link to={href.startsWith("#") ? `/${href}` : href} {...rest} />;
+}
 
 function ThemeToggle() {
   const [dark, setDark] = useState(() =>
@@ -42,6 +50,8 @@ function ThemeToggle() {
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const path = usePath();
+  const isHome = path === "/";
 
   return (
     <header className="sticky top-0 z-40 border-b border-line/70 bg-bg/80 backdrop-blur-md">
@@ -52,16 +62,21 @@ export default function Nav() {
         Skip to content
       </a>
       <nav aria-label="Primary" className="container-page flex h-16 items-center justify-between gap-4">
-        <a href="#top" className="font-semibold tracking-tight">
+        <NavLink href="#top" isHome={isHome} className="font-semibold tracking-tight">
           {profile.name}
-        </a>
+        </NavLink>
 
         <ul className="hidden items-center gap-7 text-sm text-muted md:flex">
           {nav.map((item) => (
             <li key={item.href}>
-              <a href={item.href} className="link-underline hover:text-fg">
+              <NavLink
+                href={item.href}
+                isHome={isHome}
+                aria-current={item.href !== "/" && path.startsWith(item.href) ? "page" : undefined}
+                className="link-underline hover:text-fg aria-[current=page]:text-accent"
+              >
                 {item.label}
-              </a>
+              </NavLink>
             </li>
           ))}
         </ul>
@@ -87,13 +102,14 @@ export default function Nav() {
         <ul id="mobile-menu" className="container-page flex flex-col gap-1 pb-4 md:hidden">
           {nav.map((item) => (
             <li key={item.href}>
-              <a
+              <NavLink
                 href={item.href}
+                isHome={isHome}
                 onClick={() => setOpen(false)}
                 className="block rounded-lg px-2 py-2.5 text-muted hover:bg-surface hover:text-fg"
               >
                 {item.label}
-              </a>
+              </NavLink>
             </li>
           ))}
         </ul>

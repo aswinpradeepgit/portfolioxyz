@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800" width="1600" height="800">
+<defs>
+ <radialGradient id="g1" cx="25%" cy="20%" r="60%"><stop offset="0" stop-color="#F5B840" stop-opacity=".22"/><stop offset="1" stop-color="#F5B840" stop-opacity="0"/></radialGradient>
+ <radialGradient id="g2" cx="85%" cy="90%" r="55%"><stop offset="0" stop-color="#F97316" stop-opacity=".18"/><stop offset="1" stop-color="#F97316" stop-opacity="0"/></radialGradient>
+ <linearGradient id="xp" x1="0" x2="1"><stop offset="0" stop-color="#F97316"/><stop offset="1" stop-color="#F5B840"/></linearGradient>
+ <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#F0ECE4" opacity=".07"/></pattern>
+</defs>
+<rect width="1600" height="800" fill="#0E0D0B"/><rect width="1600" height="800" fill="url(#dots)"/>
+<rect width="1600" height="800" fill="url(#g1)"/><rect width="1600" height="800" fill="url(#g2)"/>
+<text x="120" y="250" font-family="Menlo, ui-monospace, monospace" font-size="22" letter-spacing="6" fill="#F5B840">LOGBOOK · BUILDING</text>
+<text x="112" y="370" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="800" font-size="118" letter-spacing="-4" fill="#F0ECE4">MindSpend</text>
+<text x="120" y="440" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="38" fill="#A89F93">money, plus mood.</text>
+<g font-family="Menlo, ui-monospace, monospace" font-size="20" fill="#A89F93">
+ <rect x="120" y="500" rx="18" width="150" height="40" fill="none" stroke="#2E2A24" stroke-width="2"/><text x="146" y="527">FastAPI</text>
+ <rect x="285" y="500" rx="18" width="160" height="40" fill="none" stroke="#2E2A24" stroke-width="2"/><text x="309" y="527">Supabase</text>
+ <rect x="460" y="500" rx="18" width="100" height="40" fill="none" stroke="#2E2A24" stroke-width="2"/><text x="494" y="527">AI</text>
+</g>
+<!-- phone -->
+<g transform="translate(1000 90) rotate(6)">
+ <rect width="380" height="640" rx="48" fill="#141210" stroke="#3A342B" stroke-width="3"/>
+ <rect x="150" y="20" width="80" height="10" rx="5" fill="#2A2620"/>
+ <text x="36" y="92" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="700" font-size="28" fill="#F0ECE4">Hi, Aswin</text>
+ <g transform="translate(300 70)"><circle r="30" fill="#F5B840"/><text y="9" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="800" font-size="26" fill="#0E0D0B">7</text></g>
+ <text x="36" y="140" font-family="Menlo, ui-monospace, monospace" font-size="16" fill="#A89F93">LEVEL 7 · 620 / 1000 XP</text>
+ <rect x="36" y="156" width="308" height="14" rx="7" fill="#1A1814"/><rect x="36" y="156" width="191" height="14" rx="7" fill="url(#xp)"/>
+ <rect x="36" y="198" width="308" height="86" rx="18" fill="#1A1814"/>
+ <path d="M76 262c-16-10-14-28 0-42 2 12 10 14 14 6 12 16 6 32-14 36z" fill="#F97316"/>
+ <text x="110" y="236" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="700" font-size="24" fill="#F0ECE4">12-day streak</text>
+ <text x="110" y="264" font-family="Menlo, ui-monospace, monospace" font-size="15" fill="#A89F93">log today to keep it</text>
+ <text x="36" y="326" font-family="Menlo, ui-monospace, monospace" font-size="15" letter-spacing="2" fill="#A89F93">TODAY</text>
+ <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="20">
+  <rect x="36" y="342" width="308" height="64" rx="14" fill="#1A1814"/><text x="58" y="371" fill="#F0ECE4">Coffee with friends</text><text x="58" y="394" font-family="Menlo, ui-monospace, monospace" font-size="13" fill="#F5B840">JOYFUL · WANT</text><text x="322" y="382" text-anchor="end" fill="#F0ECE4">₹320</text>
+  <rect x="36" y="416" width="308" height="64" rx="14" fill="#1A1814"/><text x="58" y="445" fill="#F0ECE4">Metro card</text><text x="58" y="468" font-family="Menlo, ui-monospace, monospace" font-size="13" fill="#A89F93">NEUTRAL · NEED</text><text x="322" y="456" text-anchor="end" fill="#F0ECE4">₹200</text>
+  <rect x="36" y="490" width="308" height="64" rx="14" fill="#1A1814"/><text x="58" y="519" fill="#F0ECE4">Late-night order</text><text x="58" y="542" font-family="Menlo, ui-monospace, monospace" font-size="13" fill="#FB7185">IMPULSIVE · TREAT</text><text x="322" y="530" text-anchor="end" fill="#F0ECE4">₹540</text>
+ </g>
+ <rect x="36" y="572" width="308" height="44" rx="22" fill="#F5B840"/><text x="190" y="600" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="700" font-size="18" fill="#0E0D0B">+ Log an expense</text>
+</g>
+<!-- badge + floating xp -->
+<g transform="translate(905 560) rotate(-12)"><circle r="54" fill="none" stroke="#F5B840" stroke-width="3" stroke-dasharray="6 6"/><circle r="40" fill="#F5B840" opacity=".15"/><text y="-4" text-anchor="middle" font-family="Menlo, ui-monospace, monospace" font-size="14" fill="#F5B840">BADGE</text><text y="16" text-anchor="middle" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="800" font-size="15" fill="#F0ECE4">7-day log</text></g>
+<g font-family="Menlo, ui-monospace, monospace" font-weight="700" fill="#F5B840"><text x="1430" y="170" font-size="30">+15 XP</text><text x="930" y="230" font-size="22" opacity=".7">+10 XP</text></g>
+</svg>

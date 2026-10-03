@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520">
+<rect width="1200" height="520" fill="#FBF8F2"/>
+<text x="60" y="70" font-family="Menlo, ui-monospace, monospace" font-size="16" letter-spacing="4" fill="#B45309">YOU TYPE</text>
+<rect x="60" y="92" width="430" height="110" rx="26" fill="#1C1917"/>
+<text x="90" y="140" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="27" fill="#F0ECE4">320 coffee with friends,</text>
+<text x="90" y="176" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="27" fill="#F0ECE4">felt happy</text>
+<g transform="translate(505 150)">
+ <path d="M0 0 H150" stroke="#B45309" stroke-width="3" stroke-dasharray="8 7"/><path d="M146 -9 L160 0 L146 9" fill="none" stroke="#B45309" stroke-width="3"/>
+ <rect x="22" y="-62" width="108" height="40" rx="20" fill="#FEF0C7" stroke="#B45309" stroke-width="2"/><text x="76" y="-35" text-anchor="middle" font-family="Menlo, ui-monospace, monospace" font-size="17" font-weight="700" fill="#92400E">LLM</text>
+ <text x="76" y="44" text-anchor="middle" font-family="Menlo, ui-monospace, monospace" font-size="13" fill="#78716C">fallback: regex</text>
+</g>
+<text x="690" y="70" font-family="Menlo, ui-monospace, monospace" font-size="16" letter-spacing="4" fill="#B45309">MINDSPEND GETS</text>
+<rect x="690" y="92" width="450" height="330" rx="22" fill="#FFFFFF" stroke="#E0D9CC" stroke-width="2"/>
+<g font-family="Menlo, ui-monospace, monospace" font-size="21">
+ <text x="722" y="148" fill="#78716C">amount</text><text x="900" y="148" fill="#1C1917" font-weight="700">₹320</text>
+ <text x="722" y="206" fill="#78716C">category</text><text x="900" y="206" fill="#1C1917">Food &amp; Drink</text>
+ <text x="722" y="264" fill="#78716C">description</text><text x="900" y="264" fill="#1C1917">coffee w/ friends</text>
+ <text x="722" y="322" fill="#78716C">emotion</text><rect x="894" y="300" width="104" height="32" rx="16" fill="#FEF0C7"/><text x="946" y="322" text-anchor="middle" fill="#92400E">joyful</text>
+ <text x="722" y="380" fill="#78716C">intent</text><rect x="894" y="358" width="84" height="32" rx="16" fill="#E0E7FF"/><text x="936" y="380" text-anchor="middle" fill="#3730A3">want</text>
+</g>
+<text x="60" y="300" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#57504A">One sentence in.</text>
+<text x="60" y="334" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#57504A">A structured, mood-tagged</text>
+<text x="60" y="368" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="22" fill="#57504A">expense out.</text>
+<text x="60" y="460" font-family="Menlo, ui-monospace, monospace" font-size="14" fill="#A8A29E">illustrative example</text>
+</svg>
