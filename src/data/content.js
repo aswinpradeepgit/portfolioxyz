@@ -4,7 +4,7 @@ export const profile = {
   name: "Aswin Pradeep",
   role: "Backend engineer, heading for forward deployed engineering",
   intro:
-    "I've worked across data science, AI and backend engineering, and today I build Spring Boot microservices for airline crew management at IBS Software. Next: forward deployed engineering, sitting close to real teams and taking AI from prototype to production inside their actual workflows.",
+    "I build backend systems people rely on, currently Spring Boot microservices for airline crew operations at IBS Software. Heading toward forward deployed engineering: working alongside teams to turn their real problems into software that ships.",
   years: "~5 years",
   email: "aswinpradeep15@gmail.com",
   phone: { display: "62824 42055", href: "tel:+916282442055" },
@@ -21,9 +21,9 @@ export const nowBuilding = {
 };
 
 export const about = [
-  "I'm a software engineer with around 5 years of experience across data science, AI and backend engineering. I started as a Data Science Associate at Belong Education, then worked as a software engineer at Done Academy (remote, Dubai) and Speridian Technologies in Kochi, where AI was part of the work too.",
-  "Today I'm at IBS Software, building Spring Boot microservices for an airline crew management platform where reliability and performance really matter. Alongside, I've freelanced part-time for trading companies, automating their algorithms and strategies with Python and AI.",
-  "Where I'm heading: forward deployed engineering. I like being close to the people who use the software, understanding their messy real-world problems, and shipping AI-powered solutions that actually fit how they work.",
+  "Right now I'm at IBS Software, writing Java and Spring Boot services that help airlines manage their crews.",
+  "Getting here took a few turns: software engineering, data science, AI, some freelancing, and even teaching. Along the way I learned that the best code usually comes from understanding the people who'll use it.",
+  "That's why I'm heading toward forward deployed engineering: less building in isolation, more working alongside teams to solve the problems they actually have.",
 ];
 
 // Newest first. `stamp` = the domain "passport stamp" shown on each leg.
@@ -52,9 +52,9 @@ export const experience = [
     period: "Jun 2025 – Oct 2025",
     years: "2025",
     location: "Kochi, India",
-    summary: "Software engineering, with AI as part of the work.",
-    stamp: { label: "Software + AI", tone: "emerald" },
-    tags: ["Software engineering", "AI"],
+    summary: "General backend engineering: APIs, services, and fixing whatever the system needed that week.",
+    stamp: { label: "Backend", tone: "sky" },
+    tags: ["Backend", "APIs"],
   },
   {
     company: "Done Academy",
@@ -63,9 +63,9 @@ export const experience = [
     period: "Aug 2024 – May 2025",
     years: "2024–25",
     location: "Dubai, UAE · Remote",
-    summary: "Remote software engineering for a Dubai-based company, including AI work.",
-    stamp: { label: "Software + AI", tone: "emerald" },
-    tags: ["Software engineering", "AI", "Remote"],
+    summary: "Learning platforms again, this time for the hospitality industry: backend work for a Dubai-based team, fully remote.",
+    stamp: { label: "LMS · Hospitality", tone: "emerald" },
+    tags: ["LMS", "Hospitality", "Backend", "Remote"],
   },
   {
     company: "Belong Education",
@@ -73,9 +73,9 @@ export const experience = [
     role: "Data Science Associate",
     period: "May 2022 – Aug 2024",
     years: "2022–24",
-    summary: "Where it started: data science and AI work.",
-    stamp: { label: "Data science & AI", tone: "indigo" },
-    tags: ["Data science", "AI"],
+    summary: "Two seats on the same plane: built the backend and AI features of an LMS, then taught data science to the students learning on it.",
+    stamp: { label: "EdTech · Data science", tone: "indigo" },
+    tags: ["LMS", "Backend", "AI", "Teaching"],
   },
 ];
 
@@ -145,7 +145,7 @@ export const ticker = [
   "NOW BOARDING · MINDSPEND",
   "NEXT DESTINATION · FORWARD DEPLOYED ENGINEERING",
   "CRUISING · SPRING BOOT MICROSERVICES @ IBS SOFTWARE",
-  "PREVIOUS STOPS · DATA SCIENCE @ BELONG · SOFTWARE + AI @ DONE ACADEMY (DUBAI) & SPERIDIAN",
+  "PREVIOUS STOPS · EDTECH @ BELONG · HOSPITALITY LMS @ DONE ACADEMY (DUBAI) · BACKEND @ SPERIDIAN",
   "CHARTER FLIGHTS · PYTHON + AI TRADING AUTOMATION",
   "OPEN TO CONVERSATIONS · AI · PRODUCTIVITY · THOUGHTFUL SOFTWARE",
 ];

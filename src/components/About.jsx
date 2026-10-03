@@ -10,11 +10,13 @@ const facts = [
 ];
 
 const passport = [
-  { label: "Data science", tone: "indigo", rotate: -6 },
-  { label: "AI", tone: "emerald", rotate: 5 },
-  { label: "Software eng", tone: "emerald", rotate: -3 },
-  { label: "Airline systems", tone: "amber", rotate: 7 },
-  { label: "Algo trading", tone: "rose", rotate: -8 },
+  { label: "Java backend", tone: "amber", rotate: -5 },
+  { label: "Data science", tone: "indigo", rotate: 6 },
+  { label: "AI", tone: "emerald", rotate: -3 },
+  { label: "EdTech", tone: "indigo", rotate: 4 },
+  { label: "Hospitality", tone: "emerald", rotate: -7 },
+  { label: "Airline systems", tone: "amber", rotate: 5 },
+  { label: "Algo trading", tone: "rose", rotate: -6 },
 ];
 
 export default function About() {

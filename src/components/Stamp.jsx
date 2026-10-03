@@ -5,6 +5,7 @@ const tones = {
   emerald: "text-emerald-700 dark:text-emerald-300",
   indigo: "text-indigo-700 dark:text-indigo-300",
   rose: "text-rose-700 dark:text-rose-300",
+  sky: "text-sky-700 dark:text-sky-300",
 };
 
 // Passport-style ink stamp that "thumps" down when it scrolls into view.
