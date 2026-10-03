@@ -4,7 +4,7 @@ import { about, profile } from "../data/content";
 
 const facts = [
   { label: "Experience", value: profile.years },
-  { label: "Companies", value: "4 + freelance" },
+  { label: "Companies", value: "4" },
   { label: "Based in", value: "Kochi, India" },
   { label: "Next destination", value: "Forward deployed eng.", accent: true },
 ];
