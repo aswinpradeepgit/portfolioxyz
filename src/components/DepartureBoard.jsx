@@ -22,7 +22,7 @@ export default function DepartureBoard() {
       </div>
 
       <div role="row" className="mb-2 grid grid-cols-[1fr_94px] gap-2 sm:grid-cols-[88px_1fr_118px] sm:gap-3 font-mono text-[10px] uppercase tracking-widest text-board-dim">
-        <span role="columnheader" className="hidden sm:block">Flight</span>
+        <span role="columnheader" className="hidden sm:block">Year</span>
         <span role="columnheader">Destination</span>
         <span role="columnheader">Status</span>
       </div>
@@ -36,7 +36,7 @@ export default function DepartureBoard() {
             <span role="cell">
               <SplitFlap text={d.to} length={16} delay={400 + i * 180} cellClass={cell} />
             </span>
-            <span role="cell" className={d.status === "BOARDING" ? "[&_.flap]:text-board-amber" : ""}>
+            <span role="cell" className={d.highlight ? "[&_.flap]:text-board-amber" : ""}>
               <SplitFlap text={d.status} length={8} delay={500 + i * 180} cellClass={cell} />
             </span>
           </div>
